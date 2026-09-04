@@ -1,5 +1,7 @@
 # Customer Churn Analysis & Prediction
 
+End-to-end customer churn analysis and machine learning project using Python, Pandas, Scikit-learn, and business-focused insights.
+
 ## 📌 Project Overview
 
 Customer churn is a major business problem for subscription-based companies. This project analyzes customer behavior, identifies key churn patterns, and builds machine learning models to predict customers who are likely to churn.

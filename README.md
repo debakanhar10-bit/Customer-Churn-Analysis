@@ -1,6 +1,15 @@
 # Customer Churn Analysis & Prediction
+> End-to-end customer churn analysis and machine learning project using Python, Pandas, Scikit-learn, and business-focused insights.
 
-End-to-end customer churn analysis and machine learning project using Python, Pandas, Scikit-learn, and business-focused insights.
+### ⭐ Project Highlights
+
+- 📊 Analyzed **7K+ customer records**
+- 🔍 Identified key customer churn patterns and high-risk segments
+- 🤖 Built **Logistic Regression** and **Random Forest** models
+- 📈 Achieved **83.57% ROC-AUC** with Logistic Regression
+- 🎯 Random Forest achieved **77.01% Recall** for churn detection
+- 💼 Generated actionable **customer retention recommendations**
+
 
 ## 📌 Project Overview
 
@@ -25,18 +34,18 @@ The main objectives of this project are:
 
 ## 📂 Dataset
 
-*Dataset:* IBM Telco Customer Churn Dataset
+**Dataset:** IBM Telco Customer Churn Dataset
 
 - Original customers: 7,043
 - Cleaned customers: 7,032
 - Original columns: 21
-- Removed records: 11 invalid/blank TotalCharges values
-- Target variable: Churn
+- Removed records: 11 invalid/blank `TotalCharges` values
+- Target variable: `Churn`
 
 ### Target Variable
 
-- 1 = Customer Churned
-- 0 = Customer Did Not Churn
+- `1` = Customer Churned
+- `0` = Customer Did Not Churn
 
 ---
 
@@ -113,63 +122,88 @@ The main objectives of this project are:
 
 ---
 
+# 📊 Power BI Dashboard
+
+An interactive Power BI dashboard was developed to monitor customer churn patterns, identify high-risk customer segments, and support data-driven retention strategies.
+
+### Dashboard Features
+
+- Total Customers
+- Churned Customers
+- Churn Rate
+- Average Monthly Charges
+- High-Risk Customers
+- Churn Rate by Contract Type
+- Churn Rate by Internet Service
+- Churn Rate by Payment Method
+- Churn Rate by Tenure
+- Churn Rate by Monthly Charges
+- Churn Rate by Tech Support
+- Churn Rate by Online Security
+- Churn Rate by Senior Citizen
+- Interactive slicers for Contract, Internet Service, and Payment Method
+
+![Customer Churn Power BI Dashboard](dashboard.png)
+
+---
+
 # 📈 Key Business Insights
 
 ### 1. Overall Churn Rate
 
-The overall customer churn rate was *26.58%*.
+The overall customer churn rate was **26.58%**.
 
 This indicates that approximately one in four customers left the service.
 
-*Recommendation:* Develop targeted customer retention and engagement strategies.
+**Recommendation:** Develop targeted customer retention and engagement strategies.
 
 ---
 
 ### 2. Month-to-Month Customers
 
-Month-to-month customers had a *42.71% churn rate*, considerably higher than customers on longer-term contracts.
+Month-to-month customers had a **42.71% churn rate**, considerably higher than customers on longer-term contracts.
 
-*Recommendation:* Encourage customers to move to one-year or two-year contracts through loyalty benefits and suitable offers.
+**Recommendation:** Encourage customers to move to one-year or two-year contracts through loyalty benefits and suitable offers.
 
 ---
 
 ### 3. New Customers Are High Risk
 
-Customers with *0–6 months of tenure* had a *53.33% churn rate*.
+Customers with **0–6 months of tenure** had a **53.33% churn rate**.
 
-*Recommendation:* Strengthen onboarding, early engagement, and first-year retention programs.
+**Recommendation:** Strengthen onboarding, early engagement, and first-year retention programs.
 
 ---
 
 ### 4. Higher Monthly Charges
 
-Customers paying *$70–$100 per month* had a *37.85% churn rate*.
+Customers paying **$70–$100 per month** had a **37.85% churn rate**.
 
-*Recommendation:* Review pricing, bundles, and value-added services for higher-paying customers.
+**Recommendation:** Review pricing, bundles, and value-added services for higher-paying customers.
 
 ---
 
 ### 5. Electronic Check Payments
 
-Customers using *Electronic Check* had a *45.29% churn rate*.
+Customers using **Electronic Check** had a **45.29% churn rate**.
 
-*Recommendation:* Encourage automatic payment methods through convenient payment options and customer education.
+**Recommendation:** Encourage automatic payment methods through convenient payment options and customer education.
 
 ---
 
 ### 6. Technical Support
 
-Customers without Tech Support had a *41.65% churn rate, compared with **15.20%* among customers with Tech Support.
+Customers without Tech Support had a **41.65% churn rate**, compared with **15.20%** among customers with Tech Support.
 
-*Recommendation:* Promote technical support services and proactive issue resolution.
+**Recommendation:** Promote technical support services and proactive issue resolution.
 
 ---
 
 ### 7. Online Security
 
-Customers without Online Security had a *41.78% churn rate, compared with **14.64%* among customers with Online Security.
+Customers without Online Security had a **41.78% churn rate**, compared with **14.64%** among customers with Online Security.
 
-*Recommendation:* Promote security services as part of customer packages.
+**Recommendation:** Promote security services as part of customer packages.
 
 ---
 
@@ -183,8 +217,8 @@ A high-risk segment was identified using the following conditions:
 
 ### Segment Results
 
-- Customers: *856*
-- Churn rate: *69.04%*
+- Customers: **856**
+- Churn rate: **69.04%**
 
 This segment represents a strong priority for targeted retention campaigns.
 
@@ -199,7 +233,7 @@ Two classification models were developed and compared:
 - Logistic Regression
 - Random Forest
 
-The dataset was divided using an *80/20 stratified train-test split*.
+The dataset was divided using an **80/20 stratified train-test split**.
 
 ---
 
@@ -214,11 +248,11 @@ The dataset was divided using an *80/20 stratified train-test split*.
 
 ## 🏆 Model Selection
 
-*Random Forest* was selected as the business-focused model because it achieved:
+**Random Forest** was selected as the business-focused model because it achieved:
 
-- Higher Recall: *77.01%*
-- Slightly higher F1-Score: *61.87%*
-- ROC-AUC: *83.46%*
+- Higher Recall: **77.01%**
+- Slightly higher F1-Score: **61.87%**
+- ROC-AUC: **83.46%**
 
 Higher recall is useful for churn detection because the business may prefer to identify more customers who are actually at risk of leaving.
 
@@ -279,7 +313,7 @@ Based on the analysis, the company can focus on:
 
 # 📁 Project Structure
 
-text
+```text
 Customer_Churn_Analysis/
 │
 ├── data/
@@ -327,13 +361,13 @@ Customer_Churn_Analysis/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-
+```
 
 ---
 
 # 🎯 Key Project Outcomes
 
-- Analyzed *7K+ customer records*
+- Analyzed **7K+ customer records**
 - Performed data cleaning and preprocessing
 - Conducted exploratory data analysis
 - Identified major churn patterns
@@ -360,8 +394,8 @@ This analysis can help a subscription-based business:
 
 # 👩‍💻 Author
 
-*Debashish Kanhar*
+**Debashish Kanhar**
 
 Aspiring Data Analyst
 
-*Skills:* Python | SQL | Excel | Power BI | Data Analysis | Machine Learning
+**Skills:** Python | SQL | Excel | Power BI | Data Analysis | Machine Learning
